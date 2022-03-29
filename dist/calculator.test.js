@@ -30,4 +30,31 @@ describe('subtract()', () => {
   })
 })
 
+describe('multiply()', () => {
+  test('given 2 numbers', () => {
+    expect(calculator.multiply(2, 8)).toBe(16)
+  })
 
+  test('given 2 numbers', () => {
+    expect(calculator.multiply(-1, -2)).toBe(2)
+  })
+
+  test('given 2 numbers', () => {
+    expect(calculator.multiply(4, -5)).toBe(-20)
+  })
+})
+
+describe('divide()', () => {
+  test('given 2 numbers', () => {
+    expect(calculator.divide(-6, -2)).toBe(3)
+  })
+
+  test('given 2 numbers', () => {
+    expect(calculator.divide(-8, -2)).toBe(4)
+  })
+
+  test('given 2 numbers', () => {
+    expect(() => calculator.divide(4, 0))
+      .toThrow('divide by zero')
+  })
+})
