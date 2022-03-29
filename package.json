@@ -5,5 +5,8 @@
   "scripts": {
     "test": "jest --coverage",
     "watch": "jest --watchAll"
+  },
+  "dependencies": {
+    "axios": "^0.26.1"
   }
 }

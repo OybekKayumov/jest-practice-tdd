@@ -78,4 +78,22 @@ test('there is bo I in team', () => {
   expect('team').not.toMatch(/I/i); //* teamIi will fail
 });
 
-//todo Regex
+
+//todo Arrays
+// toContain
+
+test('Admin should be in usernames', () => {
+  usernames = ['john', 'karen', 'admin', 'susan']
+  expect(usernames).toContain('admin');
+});
+
+
+//todo run: npm i axios
+//fetch, working wih async data
+// test('user fetched name should be Leanne Graham', () => {
+//   expect.assertions(1);
+//   return functions.fetchUser().then(data => {
+//       expect(data.name).toEqual('Leanne Graham');
+//     });
+// });
+
