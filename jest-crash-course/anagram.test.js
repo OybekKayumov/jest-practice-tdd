@@ -8,3 +8,12 @@ test('isAnagram function exist', () => {
 test('cinema is an anagram of iceman', () => {
   expect(isAnagram('cinema', 'iceman')).toBeTruthy();
 });
+
+// spaces, uppercases, characters
+test(' "Dormitory" is an anagram of "dirty room#!*" ', () => {
+  expect(isAnagram('Dormitory', 'dirty room#!* ')).toBeTruthy();
+});
+
+test(' "Hello" is NOT  an anagram of "Aloha" ', () => {
+  expect(isAnagram('Hello', 'Aloha')).toBeFalsy();
+});
