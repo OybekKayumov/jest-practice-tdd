@@ -10,6 +10,7 @@ test('string reverses', () => {
   expect(reverseStr('freesync')).toBe('cnyseerf');
 });
 
+// check if the str has a UpperCase
 test('string reverses with uppercase', () => {  
   expect(reverseStr('FreeSync')).toEqual('cnyseerf');
 });
