@@ -1,5 +1,15 @@
 const functions = require('./functions');
 
+//todo run before and after each test in this file
+beforeEach(() => initDataBase());
+afterEach(() => closeDataBase());
+
+const initDataBase = () => console.log('DataBase Initialized...');
+const closeDataBase = () => console.log('DataBase Closed...');
+
+
+
+
 //todo toBe
 
 test('adds 2 + 2 to equal 4', () => {
