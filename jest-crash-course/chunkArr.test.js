@@ -1,6 +1,6 @@
 const chunkArr = require('./chunkArr.js')
 
-// check if the function is exist
+// check if the function is exist (1)
 test('chunkArr function exist', () => {
   expect(chunkArr).toBeDefined();
 });
