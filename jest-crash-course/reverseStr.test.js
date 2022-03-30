@@ -6,6 +6,10 @@ test('reversStr function exist', () => {
 });
 
 test('string reverses', () => {
-  // expect(reverseStr('hello')).toEqual('olleh');
+  // expect(reverseStr('hello')).toEqual('olleh');   //* test is ok
   expect(reverseStr('freesync')).toBe('cnyseerf');
+});
+
+test('string reverses with uppercase', () => {  
+  expect(reverseStr('FreeSync')).toEqual('cnyseerf');
 });
