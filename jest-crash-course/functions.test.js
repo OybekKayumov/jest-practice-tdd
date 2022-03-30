@@ -4,14 +4,29 @@ const functions = require('./functions');
 // beforeEach(() => initDataBase());
 // afterEach(() => closeDataBase());
 
-beforeAll(() => initDataBase());
-afterAll(() => closeDataBase());
+// beforeAll(() => initDataBase());
+// afterAll(() => closeDataBase());
 
 
-const initDataBase = () => console.log('DataBase Initialized...');
-const closeDataBase = () => console.log('DataBase Closed...');
+// const initDataBase = () => console.log('DataBase Initialized...');
+// const closeDataBase = () => console.log('DataBase Closed...');
 
+//todo message before and after one test function
+const nameCheck = () => console.log('Checking Name...');
 
+describe('checking names', () => {
+  beforeEach(() => nameCheck());
+
+  test('user is Jeff', () => {
+    const user = 'Jeff'
+    expect(user).toBe('Jeff')    
+  });
+
+  test('user is Karen', () => {
+    const user = 'Karen'
+    expect(user).toBe('Karen')    
+  });    
+})
 
 
 //todo toBe
