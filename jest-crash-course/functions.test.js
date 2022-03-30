@@ -132,3 +132,10 @@ test('Admin should be in usernames', () => {
 //   const data = await functions.fetchUser();
 //   expect(data.name).toEqual('Leanne Graham');  
 // });
+
+
+//todo "watch": "jest --watchAll" or "testwatch": "jest --watchAll"
+//* add to package.json
+
+// npm run watch
+// npm run testwatch
