@@ -1,8 +1,12 @@
 const functions = require('./functions');
 
 //todo run before and after each test in this file
-beforeEach(() => initDataBase());
-afterEach(() => closeDataBase());
+// beforeEach(() => initDataBase());
+// afterEach(() => closeDataBase());
+
+beforeAll(() => initDataBase());
+afterAll(() => closeDataBase());
+
 
 const initDataBase = () => console.log('DataBase Initialized...');
 const closeDataBase = () => console.log('DataBase Closed...');
